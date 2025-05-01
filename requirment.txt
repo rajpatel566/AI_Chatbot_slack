@@ -1,0 +1,8 @@
+mysql-connector
+google-genai
+langchain
+langchain_community
+faiss-cpu
+fastapi
+uvicorn
+slack_bolt
