@@ -35,10 +35,6 @@ class SlackBot:
         """Formats text for Slack."""
         return text.replace("**", "*").replace("__", "_").replace("\n- ", "\n• ").replace("\n1. ", "\n1️ ")
 
-    # def get_ai_response(self, prompt):
-    #     """Generate AI response using generate_blockkit_body."""
-    #     ai_response_blocks = self.llm.generate_blockkit_body(prompt)
-    #     return json.dumps(ai_response_blocks)
     def get_ai_response(self, prompt):
         """Generate AI response using generate_blockkit_body."""
         llm_prompt = f"Respond to the following user input in a helpful and engaging way using Slack Block Kit JSON format: '{prompt}'"
