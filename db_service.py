@@ -3,10 +3,10 @@ from datetime import datetime
 
 # Configure MySQL Database
 mysql_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'mysql',
-    'database': 'conversation_db'
+    'host': 'YOUR_HOST',
+    'user': 'YOUR_USERNAME',
+    'password': 'YOUR_MYSQL_PASSWORD',
+    'database': 'YOUR_DATABASE'
 }
 
 def get_or_create_session(slack_user_id, channel_id):
